@@ -1,11 +1,12 @@
 import React from "react";
+import Logo from "./Logo";
 
 const Navbar = () => {
   return (
     <div className="navigation">
       <div className="ui menu">
         <div className="header item logo">
-          <h1>PaperZone</h1>
+          <Logo />
         </div>
       </div>
     </div>
