@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AACE,cAAG;EACD,KAAK,EAAE,GAAG",
+"sources": ["sass/partials/_navbar.scss"],
 "names": [],
 "file": "App.css"
 }
