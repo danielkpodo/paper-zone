@@ -4,13 +4,16 @@
 }
 
 .logo {
+  i {
+    color: #fbd786;
+  }
   h1 {
-    color: #ffd082;
+    color: #f7797d;
     font-family: "2020 Outline Fortune Kei";
     letter-spacing: 1rem;
     -webkit-font-smoothing: antialiased;
     &:hover {
-      color: #fc4a1a;
+      color: #c6ffdd;
     }
   }
 }

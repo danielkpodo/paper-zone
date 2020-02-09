@@ -6,13 +6,15 @@
 @font-face {
   font-family: "2020 Outline Fortune Kei";
   src: url("../assets/fonts/2020 Outline Fortune Kei.ttf") format("truetype"); }
+.logo i {
+  color: #fbd786; }
 .logo h1 {
-  color: #ffd082;
+  color: #f7797d;
   font-family: "2020 Outline Fortune Kei";
   letter-spacing: 1rem;
   -webkit-font-smoothing: antialiased; }
   .logo h1:hover {
-    color: #fc4a1a; }
+    color: #c6ffdd; }
 
 .form-filters {
   margin: 1.5rem auto;
