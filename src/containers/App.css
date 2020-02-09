@@ -13,12 +13,27 @@
   .logo h1:hover {
     color: gold; }
 
-body {
-  background: #3e5151;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #decba4, #3e5151);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #decba4, #3e5151);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+.form-filters {
+  margin: 2.5rem auto;
+  width: 50rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.625rem;
+  padding: 0 1rem; }
+  .form-filters .searchbox {
+    margin-left: 2.5rem; }
+  .form-filters input {
+    width: 30rem; }
+
+.header {
+  margin: 2.5rem 0;
+  text-align: center; }
+  .header h2 {
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #e44d26; }
+  .header p {
+    color: #f7b733;
+    margin-top: -12px; }
 
 /*# sourceMappingURL=App.css.map */

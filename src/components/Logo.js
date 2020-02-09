@@ -6,7 +6,9 @@ const Logo = () => {
     <div className="logo">
       <Tilt className="Tilt" options={{ max: 55 }}>
         <div className="Tilt-inner">
-          <h1> PaperZone</h1>
+          <h1>
+            <i className="angle double right icon"></i>PaperZone
+          </h1>
         </div>
       </Tilt>
     </div>

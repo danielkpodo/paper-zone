@@ -1,0 +1,14 @@
+.form-filters {
+  margin: 2.5rem auto;
+  width: 50rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.625rem;
+  padding: 0 1rem;
+  .searchbox {
+    margin-left: 2.5rem;
+  }
+  input {
+    width: 30rem;
+  }
+}
