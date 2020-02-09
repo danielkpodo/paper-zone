@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lora&display=swap");
 .navigation .menu {
   background: #21243d;
   border-radius: 0; }
@@ -14,7 +15,7 @@
     color: #fc4a1a; }
 
 .form-filters {
-  margin: 2.5rem auto;
+  margin: 1.5rem auto;
   width: 50rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -29,11 +30,33 @@
   margin: 2.5rem 0;
   text-align: center; }
   .header h2 {
-    font-weight: 800;
-    font-size: 2.5rem;
-    color: #fc4a1a; }
+    font-weight: 400;
+    font-size: 2.8rem;
+    color: #263f44;
+    line-height: 1em;
+    font-style: italic; }
   .header p {
-    color: #f7b733;
+    color: #f3481b;
     margin-top: -12px; }
+
+.jumbotron {
+  background: #c6ffdd;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-box-shadow: 0 1px 2px #777;
+  -moz-box-shadow: 0 2px 1px #777;
+  box-shadow: 0 2px 1px #777;
+  padding: 2rem 0; }
+
+body {
+  background: #ffefba;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffffff, #ffefba);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffffff, #ffefba);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 /*# sourceMappingURL=App.css.map */
