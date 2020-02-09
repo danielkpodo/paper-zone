@@ -53,6 +53,16 @@
   box-shadow: 0 2px 1px #777;
   padding: 2rem 0; }
 
+.card img {
+  max-width: 100%;
+  display: block; }
+
+.cardlist {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.625rem;
+  padding: 1rem 1rem; }
+
 body {
   background: #ffefba;
   /* fallback for old browsers */
@@ -60,5 +70,8 @@ body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ffffff, #ffefba);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+
+.container {
+  padding: 1rem 2rem; }
 
 /*# sourceMappingURL=App.css.map */

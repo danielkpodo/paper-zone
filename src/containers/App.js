@@ -4,6 +4,7 @@ import Jumbotron from "../hoc/Jumbotron";
 import SearchBox from "../components/SearchBox";
 import CategorySelect from "../components/CategorySelect";
 import Header from "../components/Header";
+import CardList from "../components/CardList";
 import "./App.css";
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
           <SearchBox />
           <CategorySelect />
         </Jumbotron>
+        <CardList />
       </main>
     );
   }
