@@ -54,13 +54,12 @@
   padding: 2rem 0; }
 
 .card img {
-  max-width: 100%;
-  display: block; }
+  width: 100%;
+  border: 3px solid red; }
 
 .cardlist {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.625rem;
   padding: 1rem 1rem; }
 
 body {

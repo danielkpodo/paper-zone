@@ -3,7 +3,7 @@ import Card from "../components/ImageCard";
 
 const CardList = () => {
   return (
-    <div className=" container cardlist">
+    <div className="container cardlist">
       <Card />
       <Card />
       <Card />
