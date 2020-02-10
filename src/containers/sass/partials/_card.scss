@@ -1,6 +1,8 @@
 .card {
   img {
-    width: 100%;
-    border: 3px solid red;
+    max-width: 100%;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

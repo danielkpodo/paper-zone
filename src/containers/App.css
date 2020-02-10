@@ -54,12 +54,14 @@
   padding: 2rem 0; }
 
 .card img {
-  width: 100%;
-  border: 3px solid red; }
+  max-width: 100%; }
+  .card img:hover {
+    cursor: pointer; }
 
 .cardlist {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.625rem;
   padding: 1rem 1rem; }
 
 body {
@@ -71,6 +73,7 @@ body {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
 .container {
-  padding: 1rem 2rem; }
+  width: 1200px;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=App.css.map */

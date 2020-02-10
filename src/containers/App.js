@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SimpleReactLightbox from "simple-react-lightbox";
 import Navbar from "../components/Navbar";
 import Jumbotron from "../hoc/Jumbotron";
 import SearchBox from "../components/SearchBox";
@@ -13,13 +14,15 @@ class App extends Component {
   render() {
     return (
       <main>
-        <Navbar />
-        <Header />
-        <Jumbotron>
-          <SearchBox />
-          <CategorySelect />
-        </Jumbotron>
-        <CardList />
+        <SimpleReactLightbox>
+          <Navbar />
+          <Header />
+          <Jumbotron>
+            <SearchBox />
+            <CategorySelect />
+          </Jumbotron>
+          <CardList />
+        </SimpleReactLightbox>
       </main>
     );
   }
