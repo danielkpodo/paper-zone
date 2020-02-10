@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import FetchContext from "../context/FetchContext";
 
 const SearchBox = () => {
   const focusInput = useRef(null);
@@ -9,11 +10,18 @@ const SearchBox = () => {
   return (
     <div className="ui icon input searchbox">
       <i className="search icon"></i>
-      <input
-        type="search"
-        placeholder="Search images and filter by types..."
-        ref={focusInput}
-      />
+      <FetchContext.Consumer>
+        {context => {
+          return (
+            <input
+              type="search"
+              placeholder="Search images and filter by types..."
+              ref={focusInput}
+              onChange={context.onSearch}
+            />
+          );
+        }}
+      </FetchContext.Consumer>
     </div>
   );
 };

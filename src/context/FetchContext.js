@@ -1,9 +1,11 @@
 import React from "react";
 
 const FetchContext = React.createContext({
-  data: [],
+  results: [],
+  isLoading: true,
   searchPhrase: "",
-  category: ""
+  category: "",
+  onSearch: () => {}
 });
 
 export default FetchContext;
