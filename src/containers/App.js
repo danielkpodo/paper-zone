@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import SimpleReactLightbox from "simple-react-lightbox";
+import ParticlesBg from "particles-bg";
+import GithubCorner from "react-github-corner";
 import Navbar from "../components/Navbar";
 import Jumbotron from "../hoc/Jumbotron";
 import SearchBox from "../components/SearchBox";
@@ -22,7 +24,13 @@ class App extends Component {
             <CategorySelect />
           </Jumbotron>
           <CardList />
+          <ParticlesBg type="polygon" bg={true} />
         </SimpleReactLightbox>
+        <GithubCorner
+          href="https://github.com/username/repo"
+          size="65"
+          bannerColor="#21243D"
+        />
       </main>
     );
   }
