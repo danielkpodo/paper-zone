@@ -1,14 +1,15 @@
 import React from "react";
-import { SRLWrapper } from "simple-react-lightbox";
 import Card from "../components/ImageCard";
+import { SRLWrapper } from "simple-react-lightbox";
 
 const CardList = props => {
   return (
     <SRLWrapper>
       <div className="container cardlist">
-        {props.images.map(image => (
-          <Card />
-        ))}
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     </SRLWrapper>
   );

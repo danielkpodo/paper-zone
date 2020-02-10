@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import SimpleReactLightbox from "simple-react-lightbox";
+import FetchContext from "../context/FetchContext";
 import ParticlesBg from "particles-bg";
 import GithubCorner from "react-github-corner";
 import Navbar from "../components/Navbar";
@@ -8,6 +9,7 @@ import SearchBox from "../components/SearchBox";
 import CategorySelect from "../components/CategorySelect";
 import Header from "../components/Header";
 import CardList from "../components/CardList";
+
 import "./App.css";
 
 class App extends Component {
@@ -16,7 +18,7 @@ class App extends Component {
     results: [],
     searchPhrase: "",
     isLoading: true,
-    perPage: 100
+    perPage: 15
   };
 
   componentDidMount() {
@@ -47,11 +49,20 @@ class App extends Component {
         <SimpleReactLightbox>
           <Navbar />
           <Header />
-          <Jumbotron>
-            <SearchBox onSearch={this.pixabayFetchHandler} />
-            <CategorySelect />
-          </Jumbotron>
-          <CardList images={this.state.results} />
+          <FetchContext.Provider
+            value={{
+              searchPhrase: this.state.searchPhrase,
+              onSearch: this.searchPhraseHandler,
+              isLoading: this.state.isLoading,
+              results: this.state.results
+            }}
+          >
+            <Jumbotron>
+              <SearchBox />
+              <CategorySelect />
+            </Jumbotron>
+            <CardList />
+          </FetchContext.Provider>
           <ParticlesBg type="polygon" bg={true} />
           <GithubCorner
             href="https://github.com/username/repo"
