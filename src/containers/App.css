@@ -54,9 +54,11 @@
   padding: 2rem 0; }
 
 .card img {
-  max-width: 100%; }
+  max-width: 100%;
+  transition: 400ms ease-in-out; }
   .card img:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    opacity: 0.9; }
 
 .cardlist {
   display: grid;

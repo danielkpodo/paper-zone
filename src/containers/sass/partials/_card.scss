@@ -1,8 +1,10 @@
 .card {
   img {
     max-width: 100%;
+    transition: 400ms ease-in-out;
     &:hover {
       cursor: pointer;
+      opacity: 0.9;
     }
   }
 }
