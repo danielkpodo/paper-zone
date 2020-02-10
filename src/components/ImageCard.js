@@ -1,10 +1,10 @@
 import React from "react";
-import dummyImage from "../assets/images/corvette-4815234_1920.jpg";
+import img from "../assets/images/corvette-4815234_1920.jpg";
 
-const Card = () => {
+const Card = props => {
   return (
     <div className="card">
-      <img src={dummyImage} alt="The lord is my shephered" />
+      <img src={img} alt="The lord is my shephered" />
     </div>
   );
 };

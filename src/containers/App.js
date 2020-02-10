@@ -8,7 +8,6 @@ import SearchBox from "../components/SearchBox";
 import CategorySelect from "../components/CategorySelect";
 import Header from "../components/Header";
 import CardList from "../components/CardList";
-import Fetchcontext from "../context/FetchContext";
 import "./App.css";
 
 class App extends Component {
@@ -26,7 +25,7 @@ class App extends Component {
 
   pixabayFetchHandler = () => {
     this.setState({ isLoading: true });
-    const url = `https://pixabay.com/api/?key=${this.state.apiKey}&q=${this.state.searchPhrase}&image_type=photo&pretty=true`;
+    const url = `https://pixabay.com/api/?key=${this.state.apiKey}&q=${this.state.searchPhrase}&image_type=photo&per_page=${this.state.perPage}&safesearch=true`;
     fetch(url)
       .then(res => res.json())
       .then(data => {
@@ -42,19 +41,17 @@ class App extends Component {
   };
 
   render() {
-    console.log("Results", this.state.results);
+    console.log("Data", this.state.results);
     return (
       <main>
         <SimpleReactLightbox>
           <Navbar />
           <Header />
-          <Fetchcontext.Provider value={{ onSearch: this.searchPhraseHandler }}>
-            <Jumbotron>
-              <SearchBox />
-              <CategorySelect />
-            </Jumbotron>
-            <CardList />
-          </Fetchcontext.Provider>
+          <Jumbotron>
+            <SearchBox onSearch={this.pixabayFetchHandler} />
+            <CategorySelect />
+          </Jumbotron>
+          <CardList images={this.state.results} />
           <ParticlesBg type="polygon" bg={true} />
           <GithubCorner
             href="https://github.com/username/repo"
