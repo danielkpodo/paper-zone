@@ -1,5 +1,5 @@
 import React from "react";
-import dummyImage from "../assets/images/igor-miske-oLhTLD-RBsc-unsplash.jpg";
+import dummyImage from "../assets/images/corvette-4815234_1920.jpg";
 
 const Card = () => {
   return (

@@ -1,9 +1,11 @@
 .card {
   img {
     max-width: 100%;
+    display: block;
+    border-radius: 3px;
     transition: 400ms ease-in-out;
     &:hover {
-      cursor: crosshair;
+      cursor: pointer;
     }
   }
 }

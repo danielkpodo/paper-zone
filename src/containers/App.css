@@ -65,9 +65,11 @@
 
 .card img {
   max-width: 100%;
+  display: block;
+  border-radius: 3px;
   transition: 400ms ease-in-out; }
   .card img:hover {
-    cursor: crosshair; }
+    cursor: pointer; }
 
 .cardlist {
   display: grid;
@@ -92,8 +94,11 @@ body {
   background: linear-gradient(to right, #ffffff, #ffefba);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
+html {
+  box-sizing: border-box; }
+
 .container {
-  width: 1200px;
+  width: 95%;
   margin: 0 auto; }
 
 /*# sourceMappingURL=App.css.map */
