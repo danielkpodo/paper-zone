@@ -9,10 +9,16 @@
     color: #263f44;
     line-height: 1em;
     font-style: italic;
+    @include mobile {
+      font-size: 2rem;
+    }
   }
 
   p {
     color: #f3481b;
     margin-top: -12px;
+    @include mobile {
+      font-size: 0.875rem;
+    }
   }
 }

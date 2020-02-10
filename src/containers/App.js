@@ -25,12 +25,12 @@ class App extends Component {
           </Jumbotron>
           <CardList />
           <ParticlesBg type="polygon" bg={true} />
+          <GithubCorner
+            href="https://github.com/username/repo"
+            size="65"
+            bannerColor="#21243D"
+          />
         </SimpleReactLightbox>
-        <GithubCorner
-          href="https://github.com/username/repo"
-          size="65"
-          bannerColor="#21243D"
-        />
       </main>
     );
   }

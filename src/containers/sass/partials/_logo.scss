@@ -12,6 +12,10 @@
     font-family: "2020 Outline Fortune Kei";
     letter-spacing: 1rem;
     -webkit-font-smoothing: antialiased;
+    @include mobile {
+      font-size: 2rem;
+      letter-spacing: 0.625rem;
+    }
     &:hover {
       color: #c6ffdd;
     }

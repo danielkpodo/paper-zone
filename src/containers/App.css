@@ -13,6 +13,10 @@
   font-family: "2020 Outline Fortune Kei";
   letter-spacing: 1rem;
   -webkit-font-smoothing: antialiased; }
+  @media (max-width: 500px) {
+    .logo h1 {
+      font-size: 2rem;
+      letter-spacing: 0.625rem; } }
   .logo h1:hover {
     color: #c6ffdd; }
 
@@ -37,9 +41,15 @@
     color: #263f44;
     line-height: 1em;
     font-style: italic; }
+    @media (max-width: 500px) {
+      .header h2 {
+        font-size: 2rem; } }
   .header p {
     color: #f3481b;
     margin-top: -12px; }
+    @media (max-width: 500px) {
+      .header p {
+        font-size: 0.875rem; } }
 
 .jumbotron {
   background: #c6ffdd;
@@ -55,17 +65,24 @@
 
 .card img {
   max-width: 100%;
-  transition: 400ms ease-in-out;
-  box-shadow: 0 1px #ffffff inset, 0 1px 3px rgba(34, 25, 25, 0.4); }
+  transition: 400ms ease-in-out; }
   .card img:hover {
-    cursor: pointer;
-    opacity: 0.9; }
+    cursor: crosshair; }
 
 .cardlist {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0.625rem;
   padding: 1rem 1rem; }
+  @media (max-width: 1024px) {
+    .cardlist {
+      grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 768px) {
+    .cardlist {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 500px) {
+    .cardlist {
+      grid-template-columns: 1fr; } }
 
 body {
   background: #ffefba;
