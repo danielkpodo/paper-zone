@@ -28,6 +28,9 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.625rem;
   padding: 0 1rem; }
+  @media (max-width: 707px) {
+    .form-filters {
+      width: 40rem; } }
   @media (max-width: 500px) {
     .form-filters {
       width: 25rem; } }
@@ -38,6 +41,9 @@
   @media (max-width: 500px) {
     .form-filters .category {
       display: none; } }
+  @media (max-width: 707px) {
+    .form-filters .category {
+      visibility: hidden; } }
   .form-filters .searchbox {
     margin-left: 2.5rem; }
     @media (max-width: 321px) {

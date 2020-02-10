@@ -2,6 +2,13 @@
   margin: 1.5rem auto;
   padding: 0 1rem;
   width: 50rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include medium {
+    width: 40rem;
+  }
+
   @include mobile {
     width: 25rem;
   }
@@ -10,23 +17,28 @@
     width: 22rem;
     grid-template-columns: 1fr;
   }
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  @include mobile {
-    .category {
+
+  .category {
+    @include mobile {
       display: none;
     }
+    @include medium {
+      visibility: hidden;
+    }
   }
+
   grid-gap: 0.625rem;
   padding: 0 1rem;
 
   .searchbox {
     margin-left: 2.5rem;
+
     @include phone {
       margin-left: 0;
       padding: 0.625rem;
     }
   }
+
   input {
     width: 30rem;
     @include mobile {
