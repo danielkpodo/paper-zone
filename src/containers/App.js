@@ -29,6 +29,7 @@ class App extends Component {
             href="https://github.com/username/repo"
             size="65"
             bannerColor="#21243D"
+            className="github"
           />
         </SimpleReactLightbox>
       </main>

@@ -22,15 +22,36 @@
 
 .form-filters {
   margin: 1.5rem auto;
+  padding: 0 1rem;
   width: 50rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.625rem;
   padding: 0 1rem; }
+  @media (max-width: 500px) {
+    .form-filters {
+      width: 25rem; } }
+  @media (max-width: 321px) {
+    .form-filters {
+      width: 22rem;
+      grid-template-columns: 1fr; } }
+  @media (max-width: 500px) {
+    .form-filters .category {
+      display: none; } }
   .form-filters .searchbox {
     margin-left: 2.5rem; }
+    @media (max-width: 321px) {
+      .form-filters .searchbox {
+        margin-left: 0;
+        padding: 0.625rem; } }
   .form-filters input {
     width: 30rem; }
+    @media (max-width: 500px) {
+      .form-filters input {
+        width: 20rem; } }
+    @media (max-width: 321px) {
+      .form-filters input {
+        width: 18rem; } }
 
 .header {
   margin: 2.5rem 0;
@@ -49,7 +70,8 @@
     margin-top: -12px; }
     @media (max-width: 500px) {
       .header p {
-        font-size: 0.875rem; } }
+        font-size: 1rem;
+        padding: 0.625rem; } }
 
 .jumbotron {
   background: #c6ffdd;
@@ -100,5 +122,9 @@ html {
 .container {
   width: 95%;
   margin: 0 auto; }
+
+@media (max-width: 321px) {
+  .github {
+    visibility: hidden; } }
 
 /*# sourceMappingURL=App.css.map */

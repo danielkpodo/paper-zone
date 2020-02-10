@@ -18,7 +18,8 @@
     color: #f3481b;
     margin-top: -12px;
     @include mobile {
-      font-size: 0.875rem;
+      font-size: 1rem;
+      padding: 0.625rem;
     }
   }
 }
