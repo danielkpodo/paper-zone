@@ -46,7 +46,13 @@ class App extends Component {
     if (this.state.isLoading === true) {
       return <Spinner />;
     }
-    return <CardList />;
+    return this.state.results.length > 0 ? (
+      <CardList />
+    ) : (
+      <h1 style={{ textAlign: "center", padding: "1rem 0" }}>
+        No Results Found
+      </h1>
+    );
   };
 
   render() {
