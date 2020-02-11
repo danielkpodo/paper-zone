@@ -1,10 +1,23 @@
 import React from "react";
-import dummyImage from "../assets/images/corvette-4815234_1920.jpg";
-
+import { SRLWrapper } from "simple-react-lightbox";
+import FetchContext from "../context/FetchContext";
 const Card = props => {
   return (
     <div className="card">
-      <img src={dummyImage} alt="The lord is my shephered" />
+      <FetchContext.Consumer>
+        {context =>
+          context.results.map(item => {
+            return (
+              <SRLWrapper key={item.id}>
+                <img
+                  src={item.largeImageURL}
+                  alt={`Photograph with 💖 by ${item.user} with ${item.downloads} downloads`}
+                />
+              </SRLWrapper>
+            );
+          })
+        }
+      </FetchContext.Consumer>
     </div>
   );
 };

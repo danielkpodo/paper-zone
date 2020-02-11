@@ -1,6 +1,23 @@
 .card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.625rem;
+  padding: 1rem 1rem;
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
   img {
     max-width: 100%;
+    justify-content: center;
+    align-self: center;
     display: block;
     border-radius: 3px;
     transition: 400ms ease-in-out;

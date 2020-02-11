@@ -1,17 +1,11 @@
 import React from "react";
 import Card from "../components/ImageCard";
-import { SRLWrapper } from "simple-react-lightbox";
 
-const CardList = props => {
+const CardList = () => {
   return (
-    <SRLWrapper>
-      <div className="container cardlist">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
-    </SRLWrapper>
+    <div className="container cardlist">
+      <Card />
+    </div>
   );
 };
 

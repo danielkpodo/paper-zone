@@ -91,28 +91,29 @@
   box-shadow: 0 2px 1px #777;
   padding: 2rem 0; }
 
-.card img {
-  max-width: 100%;
-  display: block;
-  border-radius: 3px;
-  transition: 400ms ease-in-out; }
-  .card img:hover {
-    cursor: pointer; }
-
-.cardlist {
+.card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0.625rem;
   padding: 1rem 1rem; }
   @media (max-width: 1024px) {
-    .cardlist {
+    .card {
       grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 768px) {
-    .cardlist {
+    .card {
       grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 500px) {
-    .cardlist {
+    .card {
       grid-template-columns: 1fr; } }
+  .card img {
+    max-width: 100%;
+    justify-content: center;
+    align-self: center;
+    display: block;
+    border-radius: 3px;
+    transition: 400ms ease-in-out; }
+    .card img:hover {
+      cursor: pointer; }
 
 body {
   background: #ffefba;

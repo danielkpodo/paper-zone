@@ -18,7 +18,7 @@ class App extends Component {
     results: [],
     searchPhrase: "",
     isLoading: true,
-    perPage: 15
+    perPage: 30
   };
 
   componentDidMount() {
@@ -65,10 +65,11 @@ class App extends Component {
           </FetchContext.Provider>
           <ParticlesBg type="polygon" bg={true} />
           <GithubCorner
-            href="https://github.com/username/repo"
+            href="https://github.com/danielkpodo/paper-zone"
             size="65"
             bannerColor="#21243D"
             className="github"
+            target="_blank"
           />
         </SimpleReactLightbox>
       </main>
