@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "autobind-decorator": "^2.4.0",
+    "gh-pages": "^2.2.0",
     "imagesloaded": "^4.1.4",
     "jquery": "^3.4.1",
     "particles-bg": "^2.4.7",

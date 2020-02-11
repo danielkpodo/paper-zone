@@ -33,6 +33,7 @@ const CategorySelect = () => {
               control={Select}
               options={options}
               placeholder="Filter by category"
+              onChange={context.onFilter}
             />
           );
         }}

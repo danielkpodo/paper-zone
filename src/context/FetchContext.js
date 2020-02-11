@@ -5,7 +5,8 @@ const FetchContext = React.createContext({
   isLoading: true,
   searchPhrase: "",
   category: "",
-  onSearch: () => {}
+  onSearch: () => {},
+  onFilter: () => {}
 });
 
 export default FetchContext;
