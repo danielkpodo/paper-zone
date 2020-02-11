@@ -15,7 +15,6 @@ import "./App.css";
 
 class App extends Component {
   state = {
-    apiKey: "5359780-c6d363ff6ba32e57ec1ef818a",
     results: [],
     searchPhrase: "",
     isLoading: true,
@@ -28,7 +27,7 @@ class App extends Component {
 
   pixabayFetchHandler = () => {
     this.setState({ isLoading: true });
-    const url = `https://pixabay.com/api/?key=${this.state.apiKey}&q=${this.state.searchPhrase}&image_type=photo&per_page=${this.state.perPage}&safesearch=true`;
+    const url = `https://pixabay.com/api/?key=${process.env.REACT_APP_API_KEY}&q=${this.state.searchPhrase}&image_type=photo&per_page=${this.state.perPage}&safesearch=true`;
     fetch(url)
       .then(res => res.json())
       .then(data => {
