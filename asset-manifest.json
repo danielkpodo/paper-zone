@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/paper-zone/static/css/main.538685a1.chunk.css",
+    "main.js": "/paper-zone/static/js/main.a297cd87.chunk.js",
+    "main.js.map": "/paper-zone/static/js/main.a297cd87.chunk.js.map",
+    "runtime-main.js": "/paper-zone/static/js/runtime-main.e9a68f79.js",
+    "runtime-main.js.map": "/paper-zone/static/js/runtime-main.e9a68f79.js.map",
+    "static/css/2.b4c26766.chunk.css": "/paper-zone/static/css/2.b4c26766.chunk.css",
+    "static/js/2.e6c23151.chunk.js": "/paper-zone/static/js/2.e6c23151.chunk.js",
+    "static/js/2.e6c23151.chunk.js.map": "/paper-zone/static/js/2.e6c23151.chunk.js.map",
+    "index.html": "/paper-zone/index.html",
+    "precache-manifest.85cd58d56c7fd65e87629176fa186659.js": "/paper-zone/precache-manifest.85cd58d56c7fd65e87629176fa186659.js",
+    "service-worker.js": "/paper-zone/service-worker.js",
+    "static/css/2.b4c26766.chunk.css.map": "/paper-zone/static/css/2.b4c26766.chunk.css.map",
+    "static/css/main.538685a1.chunk.css.map": "/paper-zone/static/css/main.538685a1.chunk.css.map",
+    "static/js/2.e6c23151.chunk.js.LICENSE.txt": "/paper-zone/static/js/2.e6c23151.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/paper-zone/static/media/2020 Outline Fortune Kei.3d9dd040.ttf",
+    "static/media/semantic.css": "/paper-zone/static/media/outline-icons.ef60a4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9a68f79.js",
+    "static/css/2.b4c26766.chunk.css",
+    "static/js/2.e6c23151.chunk.js",
+    "static/css/main.538685a1.chunk.css",
+    "static/js/main.a297cd87.chunk.js"
+  ]
+}
