@@ -9,7 +9,7 @@ import SearchBox from "../components/SearchBox";
 import CategorySelect from "../components/CategorySelect";
 import Header from "../components/Header";
 import CardList from "../components/CardList";
-
+import Spinner from "../components/Spinner";
 import "./App.css";
 
 class App extends Component {
@@ -18,7 +18,7 @@ class App extends Component {
     results: [],
     searchPhrase: "",
     isLoading: true,
-    perPage: 30
+    perPage: 20
   };
 
   componentDidMount() {
@@ -42,8 +42,14 @@ class App extends Component {
     );
   };
 
+  cardListDisplayHandler = () => {
+    if (this.state.isLoading === true) {
+      return <Spinner />;
+    }
+    return <CardList />;
+  };
+
   render() {
-    console.log("Data", this.state.results);
     return (
       <main>
         <SimpleReactLightbox>
@@ -61,7 +67,7 @@ class App extends Component {
               <SearchBox />
               <CategorySelect />
             </Jumbotron>
-            <CardList />
+            {this.cardListDisplayHandler()}
           </FetchContext.Provider>
           <ParticlesBg type="polygon" bg={true} />
           <GithubCorner

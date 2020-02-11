@@ -1,23 +1,21 @@
-import React from "react";
+import React, { useContext, Fragment } from "react";
 import { SRLWrapper } from "simple-react-lightbox";
 import FetchContext from "../context/FetchContext";
-const Card = props => {
+const Card = () => {
+  const context = useContext(FetchContext);
   return (
     <div className="card">
-      <FetchContext.Consumer>
-        {context =>
-          context.results.map(item => {
-            return (
-              <SRLWrapper key={item.id}>
-                <img
-                  src={item.largeImageURL}
-                  alt={`Photograph with 💖 by ${item.user} with ${item.downloads} downloads`}
-                />
-              </SRLWrapper>
-            );
-          })
-        }
-      </FetchContext.Consumer>
+      {context.results.map(item => (
+        <Fragment key={item.id}>
+          <SRLWrapper>
+            <img
+              key={item.id}
+              src={item.largeImageURL}
+              alt={`Photograph with 💖 by ${item.user} with ${item.downloads} downloads`}
+            />
+          </SRLWrapper>
+        </Fragment>
+      ))}
     </div>
   );
 };
