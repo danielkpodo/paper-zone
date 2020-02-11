@@ -24,4 +24,4 @@ yarn-error.log*
 .sass-cache
 
 #api_key
-.env
+/.env
