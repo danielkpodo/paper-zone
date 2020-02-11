@@ -9,6 +9,7 @@ import SearchBox from "../components/SearchBox";
 import CategorySelect from "../components/CategorySelect";
 import Header from "../components/Header";
 import CardList from "../components/CardList";
+import NoResult from "../components/NoResult";
 import Spinner from "../components/Spinner";
 import "./App.css";
 
@@ -46,13 +47,7 @@ class App extends Component {
     if (this.state.isLoading === true) {
       return <Spinner />;
     }
-    return this.state.results.length > 0 ? (
-      <CardList />
-    ) : (
-      <h1 style={{ textAlign: "center", padding: "1rem 0" }}>
-        No Results Found
-      </h1>
-    );
+    return this.state.results.length > 0 ? <CardList /> : <NoResult />;
   };
 
   render() {
